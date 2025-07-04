@@ -10,7 +10,7 @@ st.title("📈 USD/MYR Exchange Rate Predictor")
 
 st.markdown("Enter macroeconomic indicators to predict **log(USD/MYR)** exchange rate.")
 
-# Sidebar inputs
+# Sidebar input
 st.sidebar.header("Input Macroeconomic Indicators")
 features = {
     'MSIA_IR_lag1': st.sidebar.number_input("🇲🇾 Malaysia Interest Rate", value=3.0),
@@ -27,10 +27,8 @@ features = {
     'MSIA_NetTrade_lag1': st.sidebar.number_input("🇲🇾 Malaysia Net Trade", value=25.0)
 }
 
-# Convert inputs to array
 input_array = np.array([list(features.values())])
 
-# Predict
 if st.button("🚀 Predict log(USD/MYR)"):
     prediction = model.predict(input_array)[0]
     st.subheader("📊 Prediction Result")
