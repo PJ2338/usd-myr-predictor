@@ -8,7 +8,7 @@ model = joblib.load("rf_model.pkl")
 st.set_page_config(page_title="USD/MYR Exchange Rate Predictor", layout="centered")
 st.title("📈 USD/MYR Exchange Rate Predictor using Random Forest Model")
 
-st.markdown("Enter 10 macroeconomic indicators to predict the **log(USD/MYR)** exchange rate.")
+st.markdown("Enter 10 macroeconomic indicators to predict the **USD/MYR** exchange rate.")
 
 # Sidebar for input
 st.sidebar.header("Input Macroeconomic Indicators")
