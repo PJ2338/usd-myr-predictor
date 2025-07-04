@@ -16,14 +16,14 @@ st.sidebar.header("Input Macroeconomic Indicators")
 features = {
     'MSIA_IR_lag1': st.sidebar.number_input("🇲🇾 Malaysia Interest Rate", value=3.0),
     'MSIA_UR_lag1': st.sidebar.number_input("🇲🇾 Malaysia Unemployment Rate", value=3.5),
-    'MSIA_NetTrade_lag1': st.sidebar.number_input("🇲🇾 Malaysia Net Trade", value=25.0)
+    'MSIA_NetTrade_lag1': st.sidebar.number_input("🇲🇾 Malaysia Net Trade", value=25.0),
     'FBMKLCI_Index_lag1': st.sidebar.number_input("🇲🇾 FBMKLCI Index", value=1450.0),
     'USA_IR_lag1': st.sidebar.number_input("🇺🇸 US Interest Rate", value=5.25),
     'USA_IPI_lag1': st.sidebar.number_input("🇺🇸 US Industrial Production Index", value=105.0),
     'USA_UR_lag1': st.sidebar.number_input("🇺🇸 US Unemployment Rate", value=3.6),
     'USA_M1_lag1': st.sidebar.number_input("🇺🇸 US M1 Money Supply", value=18000.0),
     'S&P_Index_lag1': st.sidebar.number_input("🇺🇸 S&P 500 Index", value=4400.0),
-    'GVZ_lag1': st.sidebar.number_input("GVZ Index", value=19.0),
+    'GVZ_lag1': st.sidebar.number_input("GVZ Index", value=19.0)
     
 }
 
